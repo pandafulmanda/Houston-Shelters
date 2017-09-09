@@ -239,7 +239,7 @@ class App extends Component {
             <div className="App">
                 <Meta />
                 <TopNavBar />
-                <Route exact path="/" render={() => (
+                <Route exact path="/shelters" render={() => (
                     <Shelters
                         {...this.state}
                         handleSelectedFilters={this.handleSelectedFilters}
@@ -258,7 +258,7 @@ class App extends Component {
                     />
                 )} />
 
-                <Route path='/rescues' render={( history ) => (
+                <Route path='/' render={( history ) => (
                     <GenericMapUI
                         {...this.state}
                         handleSelectedFilters={this.handleSelectedFilters}
