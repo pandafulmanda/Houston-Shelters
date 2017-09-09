@@ -36,7 +36,7 @@
     "deploy": "npm run build&&gh-pages -d build",
     "setup-vars": "./bin/setup",
     "heroku-prebuild": "npm run setup-vars",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "npm install --only=dev && npm run build",
     "start-static": "http-server ./build -p ${PORT} --cors"
   },
   "homepage": "."
